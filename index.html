@@ -582,6 +582,24 @@
                 font-size: 1.1rem;
             }
         }
+        .resume-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 12px 30px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+    margin-right: 15px; /* Adds spacing between buttons */
+}
+
+.resume-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: var(--secondary-color); /* Hover effect */
+}
+
     </style>
 </head>
 <body>
@@ -612,6 +630,7 @@
                 <p><span class="icon-text"><i class="fas fa-code"></i> Senior Software Developer</span> specializing in full-stack development, cloud architecture, and database management.</p>
                 <a href="#contact" class="cta-button"><span class="icon-text"><i class="fas fa-envelope"></i> Contact Me</span></a>
                 <a href="#experience" class="secondary-button"><span class="icon-text"><i class="fas fa-briefcase"></i> View Experience</span></a>
+                <a href="assets/prashanth-reddy-resume.pdf" class="resume-button" download><span class="icon-text"><i class="fas fa-file-download"></i> Download Resume</span></a>
             </div>
         </div>
     </section>
