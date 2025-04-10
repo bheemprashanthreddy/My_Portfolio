@@ -335,9 +335,12 @@
         }
 
         .timeline-description li {
-            margin-bottom: 8px;
-            position: relative;
-            padding-left: 5px;
+           margin-bottom: 8px;
+    position: relative;
+    padding-left: 28px;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
         }
 
         .timeline-description li i {
@@ -346,6 +349,14 @@
             color: var(--accent-color);
             width: 16px;
         }
+        .icon-list-item i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: var(--accent-color);
+    width: 20px;
+    text-align: center;
+}
 
         /* Education Section */
         .education-grid {
@@ -582,7 +593,7 @@
                 font-size: 1.1rem;
             }
         }
-        .resume-button {
+       .resume-button {
     display: inline-block;
     background-color: var(--primary-color);
     color: var(--text-light);
@@ -591,13 +602,7 @@
     text-decoration: none;
     font-weight: 600;
     transition: var(--transition);
-    margin-right: 15px; /* Adds spacing between buttons */
-}
-
-.resume-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    background-color: var(--secondary-color); /* Hover effect */
+    margin-top: 15px;
 }
 
     </style>
@@ -630,7 +635,9 @@
                 <p><span class="icon-text"><i class="fas fa-code"></i> Senior Software Developer</span> specializing in full-stack development, cloud architecture, and database management.</p>
                 <a href="#contact" class="cta-button"><span class="icon-text"><i class="fas fa-envelope"></i> Contact Me</span></a>
                 <a href="#experience" class="secondary-button"><span class="icon-text"><i class="fas fa-briefcase"></i> View Experience</span></a>
-                <a href="assets/prashanth-reddy-resume.pdf" class="resume-button" download><span class="icon-text"><i class="fas fa-file-download"></i> Download Resume</span></a>
+                <a href="assets/prashanth-reddy-resume.pdf" class="resume-button" download>
+  <span class="icon-text"><i class="fas fa-file-download"></i> Download Resume</span>
+</a>
             </div>
         </div>
     </section>
@@ -796,9 +803,9 @@
     <footer>
         <div class="container">
             <div class="footer-links">
-                <a href="#" class="footer-link"><span class="footer-icon"><i class="fab fa-linkedin"></i></span></a>
-                <a href="#" class="footer-link"><span class="footer-icon"><i class="fab fa-github"></i></span></a>
-                <a href="#" class="footer-link"><span class="footer-icon"><i class="fab fa-twitter"></i></span></a>
+                <a href="#" target="_blank" class="footer-link"><span class="footer-icon"><i class="fab fa-linkedin"></i></span></a>
+                <a href="#" target="_blank" class="footer-link"><span class="footer-icon"><i class="fab fa-github"></i></span></a>
+                <a href="#" target="_blank" class="footer-link"><span class="footer-icon"><i class="fab fa-twitter"></i></span></a>
             </div>
             <p class="footer-text">© 2025 Prashanth Reddy. All rights reserved.</p>
         </div>
